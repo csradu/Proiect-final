@@ -1,0 +1,6 @@
+com\endava\project\service\ConfigService.class
+com\endava\project\config\MongoBeanConfig.class
+com\endava\project\repository\impl\ConfigRepositoryImpl.class
+com\endava\project\controller\HelloController.class
+com\endava\project\repository\ConfigRepository.class
+com\endava\project\service\impl\ConfigServiceImpl.class

@@ -1,0 +1,13 @@
+<div ng-controller="RequestController">
+<a class="btn btn-primary" ng-href="#/node/1" >Back to Root</a>
+<a class="btn btn-primary" ng-href="{{previousNode()}}">Back</a>
+<a class="btn btn-danger" ng-click="delete()" style="position:absolute;right:360px">Delete Node</a>
+  <br>
+  <br>
+<tabset>
+  <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled" ng-click="tab.read()">
+    <div ng-include src="tab.page"></div>
+  </tab>
+</tabset>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>

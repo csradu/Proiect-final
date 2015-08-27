@@ -1,0 +1,16 @@
+<h2>Current configuration of {{node._name}}</h2>
+<br>
+<div class="container">
+  <table class="table table-hover myTable">
+    <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+    </thead>
+    <tr ng-repeat="prop in node.properties">
+      <td>{{prop.property}}</td>
+      <td>{{prop.value}}</td>
+    </tr>
+  </table>
+</div>

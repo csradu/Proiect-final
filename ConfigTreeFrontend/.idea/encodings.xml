@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/test.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/services/testService.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/main.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/BottomUpView.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/ChildrenView.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/CreateView.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/ReadView.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/TestView.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/TopDownView.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/UpdateView.html" charset="UTF-8" />
+  </component>
+</project>

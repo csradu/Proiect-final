@@ -1,0 +1,30 @@
+<h2>Update {{currentPath}}</h2>
+<br>
+<br>
+<form name="createForm" ng-submit="update()" ng-controller="RequestController" novalidate>
+  <label class="col-md-1 control-label">Name</label>
+  <div class="col-md-11">
+    <input type="text" class="form-control" name="name" ng-model="node._name" required>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="form-group" ng-repeat="config in node.properties">
+    <ng-form name="configForm">
+      <label class="col-md-1 control-label">Key</label>
+      <div class="col-md-3">
+        <input type="text" class="form-control" name="property" ng-model="config.property" required>
+      </div>
+      <label class="col-md-1 control-label">Value</label>
+      <div class="col-md-3">
+        <input type="text" class="form-control" name="value" ng-model="config.value" required>
+      </div>
+    </ng-form>
+    <div class="btn btn-default" ng-click="removePropUpdate(config)">Remove</div>
+  </div>
+  <div class="btn btn-default" style="position: absolute;right:470px" ng-click="addPropUpdate()">Add config</div>
+  <br>
+  <br>
+  <input type="submit" id="submit" value="Update"/>
+
+</form>

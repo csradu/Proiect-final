@@ -1,0 +1,30 @@
+<h2>Add a new child node to {{currentPath}}</h2>
+<br>
+<br>
+<form name="createForm" ng-submit="create()" ng-controller="RequestController" novalidate>
+  <label class="col-md-1 control-label">Name</label>
+  <div class="col-md-11">
+    <input type="text" class="form-control" name="name" ng-model="config._name" required>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="form-group" ng-repeat="config in config.properties">
+    <ng-form name="configForm">
+      <label class="col-md-1 control-label">Key</label>
+      <div class="col-md-3">
+        <input type="text" class="form-control" name="property" ng-model="config.property" required>
+      </div>
+      <label class="col-md-1 control-label">Value</label>
+      <div class="col-md-3">
+        <input type="text" class="form-control" name="value" ng-model="config.value" required>
+      </div>
+    </ng-form>
+    <div class="btn btn-danger" ng-click="removePropCreate(config)">Remove</div>
+  </div>
+  <div class="btn btn-success" style="position: absolute;right:470px" ng-click="addPropCreate()">Add config</div>
+  <br>
+  <br>
+  <input class="btn btn-primary" type="submit" id="submit" value="Create"/>
+
+</form>
